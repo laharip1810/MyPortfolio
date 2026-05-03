@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ✏️ EDIT: Change page title -->
+  <title>Pulluru Lahari | CS Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts loaded via CSS @import -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div id="scroll-progress"></div>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <!-- ✏️ EDIT: Your initials or short name -->
+      <a href="#hero" class="nav-logo">PL<span>.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#profiles">Profiles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HERO SECTION
+  ════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content fade-up">
+      <p class="hero-greeting">Hello, I'm</p>
+      <!-- ✏️ EDIT: Your name -->
+      <h1 class="hero-name">Pulluru<br /><em>Lahari</em></h1>
+      <!-- ✏️ EDIT: Your title -->
+      <p class="hero-title">Computer Science Undergraduate</p>
+      <p class="hero-tagline">
+        <!-- ✏️ EDIT: Your tagline -->
+        Focused on <span class="typed-text" id="typed"></span><span class="typed-cursor">|</span>
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+      <div class="hero-social">
+        <!-- ✏️ EDIT: Your social links -->
+        <a href="https://github.com/laharip1810" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/lahari-pulluru-497959289" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://leetcode.com/u/sggfFpJWg9/" target="_blank" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+      </div>
+    </div>
+    <a href="#about" class="hero-scroll-hint" aria-label="Scroll down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ABOUT SECTION
+  ════════════════════════════════════════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label fade-up">01 — About</div>
+      <h2 class="section-title fade-up">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-portrait fade-up">
+          <div class="portrait-ring">
+            <div class="portrait-inner">
+              <!-- ✏️ EDIT: Replace src with your actual photo path e.g. src="assets/photo.jpg" -->
+              <img
+                src="myphoto.jpeg"
+                alt="Pulluru Lahari"
+                class="portrait-photo"
+              />
+            </div>
+          </div>
+          <div class="about-info-chips">
+            <span class="chip"><i class="fas fa-map-marker-alt"></i> India</span>
+            <span class="chip"><i class="fas fa-graduation-cap"></i> B.Tech CSE</span>
+            <span class="chip"><i class="fas fa-briefcase"></i> Open to Work</span>
+          </div>
+        </div>
+        <div class="about-text fade-up">
+          <!-- ✏️ EDIT: Your about description -->
+          <p>
+            Computer Science undergraduate skilled in <strong>Data Structures</strong>, problem-solving, 
+            and <strong>full-stack development</strong>. Experienced in building scalable web applications 
+            and NLP-based systems using Java, Python, and JavaScript, with a focus on efficient, 
+            optimized, and data-driven solutions.
+          </p>
+          <p>
+            I enjoy turning complex problems into elegant solutions — whether it's architecting 
+            a robust backend, crafting intuitive user interfaces, or squeezing performance from 
+            algorithms. Always learning, always building.
+          </p>
+          <a href="mailto:laharip1810@gmail.com" class="btn btn-primary mt-md">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SKILLS SECTION
+  ════════════════════════════════════════ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-label fade-up">02 — Skills</div>
+      <h2 class="section-title fade-up">Technical Expertise</h2>
+      <div class="skills-grid">
+
+        <!-- ✏️ EDIT: Skill bars — change name & percent -->
+        <div class="skill-group fade-up">
+          <h3 class="skill-group-title"><i class="fas fa-code"></i> Languages</h3>
+          <div class="skill-bars">
+            <div class="skill-item" data-percent="88">
+              <div class="skill-meta"><span>Java</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-percent="82">
+              <div class="skill-meta"><span>Python</span><span class="skill-pct">82%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-percent="75">
+              <div class="skill-meta"><span>C</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group fade-up">
+          <h3 class="skill-group-title"><i class="fas fa-layer-group"></i> Frontend</h3>
+          <div class="skill-bars">
+            <div class="skill-item" data-percent="90">
+              <div class="skill-meta"><span>HTML & CSS</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-percent="80">
+              <div class="skill-meta"><span>JavaScript</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group fade-up">
+          <h3 class="skill-group-title"><i class="fas fa-server"></i> Backend & DB</h3>
+          <div class="skill-bars">
+            <div class="skill-item" data-percent="78">
+              <div class="skill-meta"><span>Node.js / Express</span><span class="skill-pct">78%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-percent="80">
+              <div class="skill-meta"><span>MySQL</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-percent="72">
+              <div class="skill-meta"><span>MongoDB</span><span class="skill-pct">72%</span></div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group fade-up">
+          <h3 class="skill-group-title"><i class="fas fa-tools"></i> Tools & Concepts</h3>
+          <div class="skill-tags">
+            <span class="tag">Git / GitHub</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Postman</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">System Design</span>
+            <span class="tag">DSA</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       PROJECTS SECTION
+  ════════════════════════════════════════ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-label fade-up">03 — Projects</div>
+      <h2 class="section-title fade-up">Selected Work</h2>
+      <div class="projects-grid">
+
+        <!-- ✏️ EDIT: Project cards — change data-* attributes for modal content -->
+        <div class="project-card featured fade-up"
+          data-title="PawPulse"
+          data-desc="A full-stack pet care platform offering seamless appointment booking, pet health tracking, and care scheduling. Designed with a user-first approach and deployed on the cloud for high availability."
+          data-tech="Node.js, Express, MongoDB, EJS, CSS"
+          data-live="https://laharip1810.github.io/pawpulse/"
+          data-github="https://github.com/laharip1810">
+          <div class="card-accent"></div>
+          <div class="card-icon"><i class="fas fa-paw"></i></div>
+          <div class="card-badge">Featured</div>
+          <h3>PawPulse</h3>
+          <p>Full-stack pet care app with booking & health tracking</p>
+          <div class="card-tech">
+            <span>Node.js</span><span>Express</span><span>MongoDB</span>
+          </div>
+          <button class="btn-card" onclick="openModal(this.closest('.project-card'))">View Details <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div class="project-card fade-up"
+          data-title="E-Commerce Web App"
+          data-desc="A full-featured e-commerce application with user authentication, product catalog, cart management, and order placement. Built with PHP and MySQL for robust data handling."
+          data-tech="PHP, MySQL, HTML, CSS, JavaScript"
+          data-live=""
+          data-github="https://github.com/laharip1810">
+          <div class="card-accent"></div>
+          <div class="card-icon"><i class="fas fa-shopping-cart"></i></div>
+          <h3>E-Commerce App</h3>
+          <p>Authentication + dynamic cart system with PHP & MySQL</p>
+          <div class="card-tech">
+            <span>PHP</span><span>MySQL</span><span>JavaScript</span>
+          </div>
+          <button class="btn-card" onclick="openModal(this.closest('.project-card'))">View Details <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div class="project-card fade-up"
+          data-title="News Classification System"
+          data-desc="An NLP-powered system that classifies news articles into categories using TF-IDF vectorization combined with machine learning models including Logistic Regression and SVM. Achieved strong accuracy across multi-class categories."
+          data-tech="Python, scikit-learn, TF-IDF, Logistic Regression, SVM"
+          data-live=""
+          data-github="https://github.com/laharip1810">
+          <div class="card-accent"></div>
+          <div class="card-icon"><i class="fas fa-newspaper"></i></div>
+          <h3>News Classifier</h3>
+          <p>NLP system using TF-IDF + ML models (LR, SVM)</p>
+          <div class="card-tech">
+            <span>Python</span><span>NLP</span><span>scikit-learn</span>
+          </div>
+          <button class="btn-card" onclick="openModal(this.closest('.project-card'))">View Details <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div class="project-card fade-up"
+          data-title="Restaurant Website"
+          data-desc="A responsive restaurant website with a clean modern UI, menu showcase, reservation form, and gallery. Fully responsive across mobile, tablet, and desktop with smooth CSS animations."
+          data-tech="HTML5, CSS3, JavaScript"
+          data-live=""
+          data-github="https://github.com/laharip1810">
+          <div class="card-accent"></div>
+          <div class="card-icon"><i class="fas fa-utensils"></i></div>
+          <h3>Restaurant Website</h3>
+          <p>Clean, responsive UI for a modern restaurant brand</p>
+          <div class="card-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <button class="btn-card" onclick="openModal(this.closest('.project-card'))">View Details <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT MODAL -->
+  <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Project details">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal()" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="modal-icon-wrap"><i class="fas fa-cube" id="modal-icon"></i></div>
+      <h3 id="modal-title">Project Title</h3>
+      <p id="modal-desc">Description here.</p>
+      <div class="modal-tech-label">Tech Stack</div>
+      <div id="modal-tech" class="modal-tech"></div>
+      <div class="modal-actions" id="modal-actions"></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       ACHIEVEMENTS SECTION
+  ════════════════════════════════════════ -->
+  <section id="achievements" class="section section-alt">
+    <div class="container">
+      <div class="section-label fade-up">04 — Achievements</div>
+      <h2 class="section-title fade-up">Milestones</h2>
+      <div class="ach-grid">
+
+        <!-- ✏️ EDIT: Counter numbers and labels -->
+        <div class="ach-card fade-up">
+          <i class="fas fa-terminal ach-icon"></i>
+          <div class="ach-counter" data-target="100">0</div>
+          <div class="ach-plus">+</div>
+          <p>DSA Problems Solved</p>
+        </div>
+        <div class="ach-card fade-up">
+          <i class="fas fa-project-diagram ach-icon"></i>
+          <div class="ach-counter" data-target="4">0</div>
+          <div class="ach-plus">+</div>
+          <p>Projects Built</p>
+        </div>
+        <div class="ach-card fade-up">
+          <i class="fas fa-certificate ach-icon"></i>
+          <div class="ach-counter" data-target="5">0</div>
+          <div class="ach-plus"></div>
+          <p>Certifications Earned</p>
+        </div>
+        <div class="ach-card fade-up">
+          <i class="fas fa-users ach-icon"></i>
+          <div class="ach-counter" data-target="3">0</div>
+          <div class="ach-plus">+</div>
+          <p>Workshops Attended</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       EDUCATION SECTION (TIMELINE)
+  ════════════════════════════════════════ -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-label fade-up">05 — Education</div>
+      <h2 class="section-title fade-up">Academic Journey</h2>
+      <div class="timeline">
+
+        <!-- ✏️ EDIT: Education entries -->
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2023 — 2027</span>
+            <h3>B.Tech in Computer Science & Engineering</h3>
+            <p class="timeline-school">University / College Name</p>
+            <div class="timeline-gpa"><i class="fas fa-star"></i> CGPA: 8.5</div>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">Intermediate</span>
+            <h3>MPC — Mathematics, Physics, Chemistry</h3>
+            <p class="timeline-school">Intermediate College Name</p>
+            <div class="timeline-gpa"><i class="fas fa-star"></i> GPA: 8.2</div>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">SSC</span>
+            <h3>Secondary School Certificate</h3>
+            <p class="timeline-school">School Name</p>
+            <div class="timeline-gpa"><i class="fas fa-star"></i> GPA: 8.0</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CERTIFICATIONS SECTION
+  ════════════════════════════════════════ -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <div class="section-label fade-up">06 — Certifications</div>
+      <h2 class="section-title fade-up">Credentials</h2>
+      <div class="cert-grid">
+
+        <!-- ✏️ EDIT: Certification cards -->
+        <div class="cert-card fade-up">
+          <div class="cert-icon"><i class="fab fa-aws"></i></div>
+          <h4>AWS Academy</h4>
+          <p>Cloud Foundations</p>
+        </div>
+        <div class="cert-card fade-up">
+          <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+          <h4>Cisco Networking</h4>
+          <p>CCNA Fundamentals</p>
+        </div>
+        <div class="cert-card fade-up">
+          <div class="cert-icon"><i class="fas fa-brain"></i></div>
+          <h4>AI-ML Internship</h4>
+          <p>2024 — Applied ML</p>
+        </div>
+        <div class="cert-card fade-up">
+          <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
+          <h4>AlgoUniversity</h4>
+          <p>DSA & Algorithms</p>
+        </div>
+        <div class="cert-card fade-up">
+          <div class="cert-icon"><i class="fas fa-book-open"></i></div>
+          <h4>Saylor Academy</h4>
+          <p>Computer Science</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CODING PROFILES SECTION
+  ════════════════════════════════════════ -->
+  <section id="profiles" class="section">
+    <div class="container">
+      <div class="section-label fade-up">07 — Profiles</div>
+      <h2 class="section-title fade-up">Coding Profiles</h2>
+      <div class="profiles-grid">
+
+        <!-- ✏️ EDIT: Profile links -->
+        <a href="https://leetcode.com/u/sggfFpJWg9/" target="_blank" class="profile-card fade-up">
+          <div class="profile-logo lc">LC</div>
+          <div>
+            <h4>LeetCode</h4>
+            <p>Algorithm practice & contests</p>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+
+        <a href="https://www.geeksforgeeks.org/profile/laharibkpb" target="_blank" class="profile-card fade-up">
+          <div class="profile-logo gfg">GFG</div>
+          <div>
+            <h4>GeeksforGeeks</h4>
+            <p>DSA practice & articles</p>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+
+        <a href="https://github.com/laharip1810" target="_blank" class="profile-card fade-up">
+          <div class="profile-logo gh"><i class="fab fa-github"></i></div>
+          <div>
+            <h4>GitHub</h4>
+            <p>Open-source projects</p>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/lahari-pulluru-497959289" target="_blank" class="profile-card fade-up">
+          <div class="profile-logo li"><i class="fab fa-linkedin-in"></i></div>
+          <div>
+            <h4>LinkedIn</h4>
+            <p>Professional network</p>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CONTACT SECTION
+  ════════════════════════════════════════ -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-label fade-up">08 — Contact</div>
+      <h2 class="section-title fade-up">Let's Connect</h2>
+      <div class="contact-grid">
+
+        <div class="contact-info fade-up">
+          <p class="contact-intro">
+            Have a project in mind, an opportunity to share, or just want to say hello? 
+            My inbox is always open.
+          </p>
+          <div class="contact-items">
+            <!-- ✏️ EDIT: Your contact details -->
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:laharip1810@gmail.com">laharip1810@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <a href="tel:+918341568615">+91 8341568615</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span class="contact-label">Location</span>
+                <span>India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM (Frontend UI only) -->
+        <form class="contact-form fade-up" id="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Project Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-full">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+          <p class="form-note" id="form-note"></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">PL<span>.</span></div>
+      <p class="footer-copy">
+        <!-- ✏️ EDIT: Your name -->
+        © <span id="footer-year"></span> Pulluru Lahari. Crafted with care.
+      </p>
+      <div class="footer-social">
+        <a href="https://github.com/laharip1810" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/lahari-pulluru-497959289" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:laharip1810@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
